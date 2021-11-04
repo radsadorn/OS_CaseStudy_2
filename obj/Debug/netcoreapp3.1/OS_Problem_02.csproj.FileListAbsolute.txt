@@ -1,0 +1,13 @@
+C:\Users\HCARACH\Documents\3D\OS\OS_Problem_02\bin\Debug\netcoreapp3.1\OS_Problem_02.exe
+C:\Users\HCARACH\Documents\3D\OS\OS_Problem_02\bin\Debug\netcoreapp3.1\OS_Problem_02.deps.json
+C:\Users\HCARACH\Documents\3D\OS\OS_Problem_02\bin\Debug\netcoreapp3.1\OS_Problem_02.runtimeconfig.json
+C:\Users\HCARACH\Documents\3D\OS\OS_Problem_02\bin\Debug\netcoreapp3.1\OS_Problem_02.runtimeconfig.dev.json
+C:\Users\HCARACH\Documents\3D\OS\OS_Problem_02\bin\Debug\netcoreapp3.1\OS_Problem_02.dll
+C:\Users\HCARACH\Documents\3D\OS\OS_Problem_02\bin\Debug\netcoreapp3.1\OS_Problem_02.pdb
+C:\Users\HCARACH\Documents\3D\OS\OS_Problem_02\obj\Debug\netcoreapp3.1\OS_Problem_02.csprojAssemblyReference.cache
+C:\Users\HCARACH\Documents\3D\OS\OS_Problem_02\obj\Debug\netcoreapp3.1\OS_Problem_02.AssemblyInfoInputs.cache
+C:\Users\HCARACH\Documents\3D\OS\OS_Problem_02\obj\Debug\netcoreapp3.1\OS_Problem_02.AssemblyInfo.cs
+C:\Users\HCARACH\Documents\3D\OS\OS_Problem_02\obj\Debug\netcoreapp3.1\OS_Problem_02.csproj.CoreCompileInputs.cache
+C:\Users\HCARACH\Documents\3D\OS\OS_Problem_02\obj\Debug\netcoreapp3.1\OS_Problem_02.dll
+C:\Users\HCARACH\Documents\3D\OS\OS_Problem_02\obj\Debug\netcoreapp3.1\OS_Problem_02.pdb
+C:\Users\HCARACH\Documents\3D\OS\OS_Problem_02\obj\Debug\netcoreapp3.1\OS_Problem_02.genruntimeconfig.cache
