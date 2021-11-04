@@ -45,7 +45,7 @@ namespace OS_Problem_02
             {
                 lock (_Lock)
                 {
-                    if (Count == 10)
+                    while (Count == 10)
                     {
                         //Console.WriteLine("Wait th01");
                         Monitor.Wait(_Lock);
@@ -64,7 +64,7 @@ namespace OS_Problem_02
             {
                 lock (_Lock)
                 {
-                    if (Count == 10)
+                    while (Count == 10)
                     {
                         //Console.WriteLine("Wait th011");
                         Monitor.Wait(_Lock);
@@ -86,7 +86,7 @@ namespace OS_Problem_02
             {
                 lock (_Lock)
                 {
-                    if (Count == 0)
+                    while (Count == 0)
                     {
                         Monitor.Wait(_Lock);
                     }
@@ -108,8 +108,8 @@ namespace OS_Problem_02
             t1.Start();
             t11.Start();
             t2.Start(1);
-            //t21.Start(2);
-            //t22.Start(3);
+            t21.Start(2);
+            t22.Start(3);
         }
     }
 }
