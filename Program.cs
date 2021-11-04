@@ -41,13 +41,13 @@ namespace OS_Problem_02
         static void th01()
         {
             int i;
-            lock (_Lock)
+            for (i = 1; i < 51; i++)
             {
-                for (i = 1; i < 51; i++)
+                lock (_Lock)
                 {
                     if (Count == 10)
                     {
-                        Console.WriteLine("Wait th01");
+                        //Console.WriteLine("Wait th01");
                         Monitor.Wait(_Lock);
                     }
                     EnQueue(i);
@@ -59,19 +59,21 @@ namespace OS_Problem_02
         static void th011()
         {
             int i;
-            lock (_Lock)
+           
+            for (i = 100; i < 151; i++)
             {
-                for (i = 100; i < 151; i++)
+                lock (_Lock)
                 {
                     if (Count == 10)
                     {
-                        Console.WriteLine("Wait th011");
+                        //Console.WriteLine("Wait th011");
                         Monitor.Wait(_Lock);
                     }
                     EnQueue(i);
                     Thread.Sleep(5);
                 }
             }
+            
         }
 
 
@@ -80,9 +82,9 @@ namespace OS_Problem_02
             int i;
             int j;
 
-            lock (_Lock)
+            for (i=0; i< 60; i++)
             {
-                for (i=0; i< 60; i++)
+                lock (_Lock)
                 {
                     if (Count == 0)
                     {
@@ -93,14 +95,15 @@ namespace OS_Problem_02
                     Thread.Sleep(100);
                 }
             }
+            
         }
         static void Main(string[] args)
         {
             Thread t1 = new Thread(th01);
             Thread t11 = new Thread(th011);
             Thread t2 = new Thread(th02);
-            //Thread t21 = new Thread(th02);
-            //Thread t22 = new Thread(th02);
+            Thread t21 = new Thread(th02);
+            Thread t22 = new Thread(th02);
 
             t1.Start();
             t11.Start();
