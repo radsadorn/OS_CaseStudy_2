@@ -41,15 +41,15 @@ namespace OS_Problem_02
         static void th01()
         {
             int i;
-            lock (_Lock)
+            for (i = 1; i < 51; i++)
             {
-                for (i = 1; i < 51; i++)
+                lock (_Lock)
                 {
                     while (Count == 10)
                     {
-                        Console.WriteLine("Wait Enqueue at th01");
+                        //Console.WriteLine("Wait Enqueue at th01");
                         Monitor.Wait(_Lock);
-                        System.Console.WriteLine("Continue Enqueue at th011");
+                        //System.Console.WriteLine("Continue Enqueue at th01");
                     }
                     EnQueue(i);
                     Thread.Sleep(5);
@@ -61,15 +61,15 @@ namespace OS_Problem_02
         {
             int i;
            
-           lock (_Lock)
+            for (i = 100; i < 151; i++)
             {
-                for (i = 100; i < 151; i++)
+                lock (_Lock)
                 {
-                    while (Count == 10)
+                    while(Count == 10)
                     {
-                        Console.WriteLine("Wait Enqueue at th011");
+                        //Console.WriteLine("Wait Enqueue at th011");
                         Monitor.Wait(_Lock);
-                        System.Console.WriteLine("Continue Enqueue at th011");
+                        //System.Console.WriteLine("Continue Enqueue at th011");
                     }
                     EnQueue(i);
                     Thread.Sleep(5);
@@ -84,22 +84,21 @@ namespace OS_Problem_02
             int i;
             int j;
 
-            lock (_Lock)
+            for (i=0; i< 60; i++)
             {
-                for (i=0; i< 60; i++)
+                lock (_Lock)
                 {
                     while (Count == 0)
                     {
-                        Console.WriteLine("Wait Dequeue at th02{0}", t);
+                        Console.WriteLine("\n --- Wait Dequeue at th02{0} --- \n", t);
                         Monitor.Wait(_Lock);
-                        System.Console.WriteLine("Continue Dequeue at th02{0}", t);
+                        //System.Console.WriteLine("Continue Dequeue at th02{0}", t);
                     }
                     j = DeQueue();
                     Console.WriteLine("j={0}, thread:{1}", j, t);
-                    Thread.Sleep(100);
+                    Thread.Sleep(50);
                 }
-            }
-            
+            }  
         }
         static void Main(string[] args)
         {
